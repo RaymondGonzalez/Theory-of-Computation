@@ -1,0 +1,14 @@
+/*
+Author: Raymond Gonzalez
+Email: rayraygking@csu.fullerton.edu
+File Name: styles.css
+Purpose: Style for css
+*/
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+canvas {
+  background-color: white;
+
+}
