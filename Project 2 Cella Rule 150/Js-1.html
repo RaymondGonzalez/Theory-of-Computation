@@ -1,0 +1,35 @@
+<!doctype html><html><head>
+<!
+Author: Raymond Gonzalez
+Email: rayraygking@csu.fullerton.edu
+File Name: Js-1.html
+Purpose: html page
+>
+<title>Project One Cella</title>
+<link rel="stylesheet" href="../439-p2_RAY/styles.css">
+</head>
+<body><h1>Project One Cella Rule 150</h1>
+<h4>Team name RAY</h4>
+<h4>Cella Grid </h4>
+	<p>0 represents the borders, $ is end of file marker and the orange square is the TM header</p>
+<canvas id="grid" width="440" height="210" style="border:1px solid #000000;"></canvas>
+	<h4>State grid </h4>
+<canvas id="grid_two" width="400" height="120" style="border:1px solid #000000;"></canvas>
+<p> <input id="Button1" type="button" value="Start Cella Generation" onclick="start_cella_150(canvas,canvas_two)" />
+<input id="Button2" type="button" value="set 1 ms" onclick="set_timer_1ms()" />
+<input id="Button3" type="button" value="set 100 ms" onclick="set_timer_100ms()" />
+<input id="Button4" type="button" value="set 500 ms (1/2 sec)" onclick="set_timer_500ms()" />
+<input id="Button5" type="button" value="set 1 sec" onclick="set_timer_1s()" />
+</p>
+</body>
+<script src="../439-p2_RAY/Cella-Rule-150.js"></script>
+<script>
+//code for initial display
+var canvas = document.getElementById( "grid" ).getContext( "2d" );
+draw_grid_1( canvas, 10, 50, 'black', 'blue' );
+fill_grid_1(canvas);
+var canvas_two = document.getElementById( "grid_two" ).getContext("2d");
+draw_grid2( canvas_two, 40, 50, 'black', 'blue');
+fill_grid_2(canvas_two);
+</script>
+</html>
