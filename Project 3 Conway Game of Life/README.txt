@@ -1,12 +1,6 @@
-Class number: 439
-Project #3 – TM Conway's Game of Life
-Team name: RAY
-Team Members:
-Raymond Gonzalez CWID: 890573363
-
 Intro:
 
-	Creating a TM that simulates Conway's GOL (TMGOL), and using Javascript with an HTML 
+	Creating a Turing Machine that simulates Conway's GOL (TMGOL), and using Javascript with an HTML 
 web page for display. The main strategy/algorithm used to emulate the GOL is a switch statement.
 The program uses an array filled with 0 and $ (end markers) for the tape. Start_GOL() 
 is the main function of the GOL that will call TM(), which is the TM that emulates Conway's GOL.
