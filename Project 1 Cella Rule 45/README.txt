@@ -1,9 +1,3 @@
-Class number: 439
-Project #1 – Cella Rule 45
-Team name: RAY
-Team Members:
-Raymond Gonzalez CWID: 890573363
-
 Intro:
 	Displaying the generational progress of Wolfram's Rule-45 cellular
 automaton using JavaScript with an HTML web page for display. The main strategy/algorithm
