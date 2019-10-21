@@ -1,0 +1,40 @@
+<!doctype html><html><head>
+<!
+Author: Raymond Gonzalez
+Email: rayraygking@csu.fullerton.edu
+File Name: Js-1-GOL.html
+Purpose: html page
+>
+<title>Project One Cella</title>
+<link rel="stylesheet" href="../439-p3_RAY/styles.css">
+</head>
+<body><h1>Project Three Conway GOL</h1>
+<h4>Team name RAY</h4>
+<h4>State grid </h4>
+<canvas id="grid_two" width="400" height="200" style="border:1px solid #000000;"></canvas>
+<h4>Cella Grid </h4>
+	<p>0 represents the borders, $ is end of file marker and the orange square is the TM header</p>
+<canvas id="grid" width="440" height="230" style="border:1px solid #000000;"></canvas>
+<p> <input id="Button1" type="button" value="Start GOL" onclick="start_GOL(canvas,canvas_two)" />
+	<input id="Button2" type="button" value="Clear" onclick="clear_grid1(canvas)" />
+	<input id="Button3" type="button" value="Speed up" onclick="speed_up()" />
+	<input id="Button4" type="button" value="Slow down" onclick="slow_timer()" />
+	</p>
+<p>
+<input id="Button5" type="button" value="set glider" onclick="setup_glider(canvas)" />
+<input id="Button6" type="button" value="Bill Gosper's glider gun" onclick="setup_Bill(canvas)" />
+<input id="Button7" type="button" value="Oscillators(pulser)" onclick="setup_pulser(canvas)" />
+<input id="Button8" type="button" value="Spaceship" onclick="setup_space(canvas)" />
+</p>
+</body>
+<script src="../439-p3_RAY/Tm-Conway-GOL.js"></script>
+<script>
+//code for initial display
+var canvas = document.getElementById( "grid" ).getContext( "2d" );
+draw_grid_1( canvas, 10, 50, 'black', 'blue' );
+fill_grid_1(canvas);
+var canvas_two = document.getElementById( "grid_two" ).getContext("2d");
+draw_grid2( canvas_two, 40, 50, 'black', 'blue');
+fill_grid_2(canvas_two);
+</script>
+</html>
